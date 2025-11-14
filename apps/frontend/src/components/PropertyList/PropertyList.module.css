@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+.container {
+    @apply space-y-6;
+}
+
+.grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.emptyMessage {
+    @apply text-neutral-400 py-6;
+}
+
+.paginationInfo {
+    @apply flex items-center justify-between text-sm text-neutral-500 pt-4;
+}
+
+

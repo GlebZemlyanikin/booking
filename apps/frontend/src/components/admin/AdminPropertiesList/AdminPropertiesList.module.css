@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+.grid {
+    @apply grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-4;
+}
+
+.card {
+    @apply bg-white border border-neutral-300 rounded-xl p-3 shadow-sm;
+}
+
+.title {
+    @apply font-semibold;
+}
+
+.city {
+    @apply text-neutral-400 text-sm;
+}
+
+.content {
+    @apply mt-2 space-y-2;
+}
+
+.price {
+    @apply font-bold;
+}
+
+.buttons {
+    @apply flex gap-2;
+}
+
+.editButton {
+    @apply px-4 py-2 rounded-lg font-semibold text-white cursor-pointer text-sm;
+    background: var(--color-accent);
+}
+.editButton:hover {
+    background: #fb8c00;
+}
+
+.deleteButton {
+    @apply px-4 py-2 rounded-lg font-semibold cursor-pointer text-sm;
+    background: #e0e0e0;
+    color: var(--color-text);
+}
+.deleteButton:hover {
+    background: #bdbdbd;
+}
+
+

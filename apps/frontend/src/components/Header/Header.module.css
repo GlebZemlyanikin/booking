@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+.header {
+    @apply sticky top-0 z-10 bg-[#2196F3];
+}
+
+.container {
+    @apply container mx-auto max-w-6xl px-4 py-3 flex items-center justify-between;
+}
+
+.logo {
+    @apply font-bold tracking-wide text-white cursor-pointer hover:opacity-90 transition-opacity;
+}
+
+.nav {
+    @apply flex gap-2 items-center;
+}
+
+.navLink {
+    @apply px-3 py-2 rounded-md cursor-pointer transition-colors;
+}
+
+.navLinkActive {
+    @apply bg-[#1976D2] text-white;
+}
+
+.navLinkInactive {
+    @apply text-white/90 hover:text-white;
+}
+
+.authButton {
+    @apply px-3 py-2 rounded-md text-white bg-[#FF9800] hover:bg-[#FB8C00] cursor-pointer transition-colors;
+}

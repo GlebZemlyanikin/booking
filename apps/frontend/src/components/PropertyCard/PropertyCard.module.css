@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+.card {
+    @apply rounded-xl border shadow-sm overflow-hidden flex flex-col cursor-pointer hover:shadow-lg transition-all duration-300 hover:scale-[1.01] bg-white;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+    @apply relative h-64 w-full;
+}
+
+.image {
+    @apply absolute inset-0 w-full h-full object-cover transition-opacity duration-500;
+}
+
+.imageVisible {
+    @apply opacity-100;
+}
+
+.imageHidden {
+    @apply opacity-0;
+}
+
+.navButton {
+    @apply absolute top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full w-8 h-8 grid place-items-center transition-all cursor-pointer;
+}
+
+.navButtonPrev {
+    @apply left-2;
+}
+
+.navButtonNext {
+    @apply right-2;
+}
+
+.indicators {
+    @apply absolute bottom-2 left-0 right-0 flex justify-center gap-1.5;
+}
+
+.indicator {
+    @apply w-2 h-2 rounded-full transition-all;
+}
+
+.indicatorActive {
+    @apply bg-white;
+}
+
+.indicatorInactive {
+    @apply bg-white/40;
+}
+
+.content {
+    @apply p-5 flex flex-col gap-3;
+}
+
+.title {
+    @apply text-xl font-semibold text-gray-900 leading-tight;
+}
+
+.priceContainer {
+    @apply flex items-baseline gap-2;
+}
+
+.priceLabel {
+    @apply text-sm text-gray-500;
+}
+
+.priceValue {
+    @apply text-2xl font-bold text-gray-900;
+}
+

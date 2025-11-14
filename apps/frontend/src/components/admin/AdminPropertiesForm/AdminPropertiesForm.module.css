@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+.form {
+    @apply grid grid-cols-2 gap-2 bg-white border border-neutral-300 rounded-xl p-3;
+}
+
+.addressLabel {
+    @apply flex flex-col gap-1 col-span-2;
+}
+
+.labelText {
+    @apply text-xs text-neutral-400;
+}
+
+.priceSection {
+    @apply grid grid-cols-4 gap-2 col-span-2;
+}
+
+.priceInput {
+    @apply col-span-2;
+}
+
+.textarea {
+    @apply bg-white border rounded-lg px-4 py-2.5 placeholder:text-neutral-500 focus:outline-none transition-all min-h-[96px];
+    border-color: #e0e0e0;
+}
+.textarea:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.textareaWrapper {
+    @apply flex flex-col gap-1 col-span-2;
+}
+
+.buttonsContainer {
+    @apply col-span-2 flex gap-2;
+}
+
+

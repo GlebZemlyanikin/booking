@@ -1,0 +1,98 @@
+@import 'tailwindcss';
+.form {
+    @apply space-y-1 sm:space-y-1.5;
+}
+
+.datesSection {
+    @apply space-y-1;
+}
+
+.datesLabel {
+    @apply text-[10px] sm:text-xs font-medium text-gray-700;
+}
+
+.datesInputs {
+    @apply grid grid-cols-2 gap-1 pt-0.5;
+}
+
+.dateInputGroup {
+    @apply space-y-0.5;
+}
+
+.dateInputLabel {
+    @apply text-[10px] sm:text-xs text-gray-500;
+}
+
+.dateInput {
+    @apply bg-white border rounded-lg px-2.5 py-1 text-[10px] sm:text-xs placeholder:text-neutral-500 focus:outline-none transition-all w-full;
+    border-color: #e0e0e0;
+}
+.dateInput:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.guestsSection {
+    @apply space-y-0.5;
+}
+
+.guestsLabel {
+    @apply text-[10px] sm:text-xs font-medium text-gray-700;
+}
+
+.guestsInput {
+    @apply bg-white border rounded-lg px-2.5 py-1 text-[10px] sm:text-xs placeholder:text-neutral-500 focus:outline-none transition-all w-full;
+    border-color: #e0e0e0;
+}
+.guestsInput:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.errorMessage {
+    @apply bg-red-50 border border-red-200 rounded-lg p-1.5 sm:p-2;
+}
+
+.errorText {
+    @apply text-xs sm:text-sm text-red-600;
+}
+
+.bookingInfo {
+    @apply border-t border-gray-200 pt-1 space-y-0.5;
+}
+
+.bookingRow {
+    @apply flex justify-between items-center text-[10px] sm:text-xs;
+}
+
+.bookingLabel {
+    @apply text-gray-600;
+}
+
+.bookingValue {
+    @apply font-medium text-gray-900;
+}
+
+.totalRow {
+    @apply flex justify-between items-center pt-0.5 border-t border-gray-100;
+}
+
+.totalLabel {
+    @apply font-semibold text-[10px] sm:text-xs text-gray-900;
+}
+
+.totalValue {
+    @apply text-xs sm:text-sm font-bold text-gray-900;
+}
+
+.submitButton {
+    @apply w-full px-2.5 py-1.5 rounded-lg font-semibold text-white cursor-pointer text-[10px] sm:text-xs disabled:opacity-50 disabled:cursor-not-allowed transition-all;
+    background: #2196f3;
+}
+.submitButton:hover:not(:disabled) {
+    background: #1976d2;
+}
+
+.hint {
+    @apply text-[10px] sm:text-xs text-center text-gray-500;
+}

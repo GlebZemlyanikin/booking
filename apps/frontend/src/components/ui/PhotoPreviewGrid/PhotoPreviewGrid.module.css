@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+.grid {
+    @apply mt-2 grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] gap-2;
+}
+
+.item {
+    @apply relative border border-neutral-800 rounded-lg overflow-hidden;
+}
+
+.image {
+    @apply w-full h-24 object-cover;
+}
+
+.removeButton {
+    @apply absolute top-1 right-1 px-2 py-1 text-xs rounded bg-black/60 hover:bg-black/80 cursor-pointer transition-colors text-white;
+}
+

@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+.label {
+    @apply flex flex-col gap-1;
+}
+
+.labelText {
+    @apply text-xs text-neutral-400;
+}
+
+.input {
+    @apply bg-white border rounded-lg px-4 py-2.5 placeholder:text-neutral-500 focus:outline-none transition-all;
+    border-color: #e0e0e0;
+}
+.input:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+

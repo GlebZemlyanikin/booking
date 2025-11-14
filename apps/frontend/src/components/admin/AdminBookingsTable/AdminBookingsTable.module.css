@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+.container {
+    @apply space-y-3;
+}
+
+.title {
+    @apply text-xl font-bold;
+}
+
+.emptyMessage {
+    @apply text-neutral-400;
+}
+
+.tableWrapper {
+    @apply overflow-x-auto;
+}
+
+.table {
+    @apply w-full text-sm;
+}
+
+.thead {
+    @apply text-left text-neutral-400;
+}
+
+.th {
+    @apply py-2 pr-4;
+}
+
+.tbody {
+    @apply w-full;
+}
+
+.tr {
+    @apply border-t border-neutral-800;
+}
+
+.td {
+    @apply py-2 pr-4;
+}
+
+.tdActions {
+    @apply py-2;
+}
+
+.loadButton {
+    @apply px-2 py-1 text-xs rounded-lg font-semibold cursor-pointer;
+    background: #e0e0e0;
+    color: var(--color-text);
+}
+.loadButton:hover {
+    background: #bdbdbd;
+}
+
+.deleteButton {
+    @apply px-3 py-1 rounded-lg font-semibold cursor-pointer;
+    background: #e0e0e0;
+    color: var(--color-text);
+}
+.deleteButton:hover {
+    background: #bdbdbd;
+}
+
+

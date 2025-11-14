@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+.container {
+    @apply relative;
+}
+
+.input {
+    @apply bg-white border rounded-lg px-4 py-2.5 placeholder:text-neutral-500 focus:outline-none transition-all w-full;
+    border-color: #e0e0e0;
+}
+.input:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.suggestions {
+    @apply absolute mt-1 w-full max-h-60 overflow-auto border border-neutral-800 rounded-lg shadow-xl;
+    background-color: white;
+}
+
+.loading {
+    @apply px-3 py-2 text-neutral-500;
+}
+
+.suggestionItem {
+    @apply w-full text-left px-3 py-2 hover:bg-neutral-100 cursor-pointer transition-colors;
+}
+
+

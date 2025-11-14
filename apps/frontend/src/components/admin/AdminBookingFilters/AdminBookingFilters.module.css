@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+.form {
+    @apply grid grid-cols-4 gap-2 border border-neutral-800 rounded-xl p-3;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.input {
+    @apply bg-white border rounded-lg px-4 py-2.5 placeholder:text-neutral-500 focus:outline-none transition-all;
+    border-color: #e0e0e0;
+}
+.input:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.buttonContainer {
+    @apply flex;
+}
+
+
