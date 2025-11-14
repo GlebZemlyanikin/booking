@@ -40,15 +40,15 @@ jobs:
               run: npm install --legacy-peer-deps
 
             - name: Build
-            working-directory: apps/frontend
-            env:
-                VITE_API_URL: ${{ secrets.VITE_API_URL }}
-                VITE_YANDEX_MAPS_API_KEY: ${{ secrets.VITE_YANDEX_MAPS_API_KEY }}
-            run: npm run build
+              working-directory: apps/frontend
+              env:
+                  VITE_API_URL: ${{ secrets.VITE_API_URL }}
+                  VITE_YANDEX_MAPS_API_KEY: ${{ secrets.VITE_YANDEX_MAPS_API_KEY }}
+              run: npm run build
 
-            - name: Copy index.html to 404.html for GitHub Pages SPA routing
-            working-directory: apps/frontend
-            run: cp dist/index.html dist/404.html
+            - name: 'Copy index.html to 404.html for GitHub Pages SPA routing'
+              working-directory: apps/frontend
+              run: cp dist/index.html dist/404.html
 
             - name: Setup Pages
               uses: actions/configure-pages@v4
